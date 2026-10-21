@@ -1,0 +1,10 @@
+services:
+  - type: static_site
+    name: fotos-panachi
+    staticPublishPath: ./
+    buildCommand: ""
+    headers:
+      - type: /*
+        values:
+          - key: Cache-Control
+            value: no-cache
