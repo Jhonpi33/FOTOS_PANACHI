@@ -72,7 +72,7 @@ footer p{margin:0 0 8px}
   <p class="lead">Elige tu carpeta. Si necesita clave, escríbeme por WhatsApp y te la envío en el momento.</p>
   <section class="grid" id="grid" aria-label="Carpetas de fotos"></section>
   <footer>
-    <p>Para bajar todo de una vez: abre la carpeta y elige <strong>Descargar todo</strong> en la parte superior de Drive.</p>
+    <p>Para bajar todo de una vez, toca <strong>Descargar todo (ZIP)</strong>: baja las fotos en alta calidad, sin importar si usas iPhone o Android.</p>
     <p>¿Necesitas ayuda? Escríbeme al <a href="https://wa.me/573186596536" style="color:var(--wa);font-weight:700">318&nbsp;659&nbsp;6536</a>.</p>
   </footer>
 </main>
@@ -84,11 +84,11 @@ footer p{margin:0 0 8px}
 var WHATSAPP = "573186596536"; // tu número con código de país
 
 var CARPETAS = [
-  { nombre: "Grupal", nota: "Fotos de todos juntos", url: "https://drive.google.com/drive/folders/1YFg5akBwNYMdjjU8HLXeS18ounUUssyX?usp=sharing", grupal: true },
-  { nombre: "Mariana, Samuel y Kevin", s: "0c6kBfw55CSsYATEXU+DQQ==", i: "U5l6jSLIubK4BGJH", d: "8+ORt3UX3nO1p+/I0DWhlktzpnBIpRF3nyT801hnecy1bP+pWzU6y7kHt3o2bKoPpujW0pTbXQLcE0V3r6822tYud+nPSAHSUi52htpAIknE456eQEBsTmHynEij2fCCIudzVw==" },
-  { nombre: "Doña Adriana y Don Nelson", s: "SMjxxO6tIu0EmePlamLnNQ==", i: "cZtdFlpCtlGTGZxj", d: "VqC67Cjv9f1cMTTsDr2wIaeNVFK2eYWQKmXRm1/94PSjSPjR57WJ65DsgNR1ADaANOIE6lehL1S1ecRuuytiX/7KNjFLQLHP9kboKmIAysgvzAf5QRKOk+H4av+0wjisCt7VCw==" },
-  { nombre: "Carolina y Alejo", s: "5pak0br89Py7GqsLbd8KBQ==", i: "PAPsR9xtig2SqllV", d: "DNqzpUTvRjg/NEM5WzE1gzA5bFsNk8dEaJTcEH+U8VC3Fh8x4+UEjWPKjPmUE+elO+jemhmmT1TCcEArUaV683UXMLknmVgyy48DGRQCcQs9k52z0BrS8F5Kugb4jGctS9JRig==" },
-  { nombre: "Carla", s: "EwdjKwr2SQ62vRJ3zEXiqQ==", i: "cnHcEkfrU20KF8kA", d: "Z1OjU5WmDTOcXGbNknAo3DMAmw/aYDZp0aIcvYEbxOF+wNbpoVrIJzLnPbwzYIT3dOjQ3Pho9pU2q1YdPyk0xMd/01WZm1g7/QYV4YNCQcI35/hnY6IYGve4HUQyMDYcLGivEA==" },
+  { nombre: "Grupal", nota: "Fotos de todos juntos", url: "https://drive.google.com/drive/folders/1YFg5akBwNYMdjjU8HLXeS18ounUUssyX?usp=sharing", grupal: true, zip: "https://drive.usercontent.google.com/download?id=1IbOFPiH_xdcmm54wcykmqsx2NkoCfxk2&export=download&authuser=0&confirm=t", zipMb: "315 MB" },
+  { nombre: "Mariana, Samuel y Kevin", s: "0c6kBfw55CSsYATEXU+DQQ==", i: "U5l6jSLIubK4BGJH", d: "8+ORt3UX3nO1p+/I0DWhlktzpnBIpRF3nyT801hnecy1bP+pWzU6y7kHt3o2bKoPpujW0pTbXQLcE0V3r6822tYud+nPSAHSUi52htpAIknE456eQEBsTmHynEij2fCCIudzVw==", zs: "npemgP+GpTtLzxpmofD7NA==", zi: "wCS77AhWUBnOnCzI", zd: "nJGHmpp4o9QIg2Sao/9/iT9oGVZ85xNW4yjUoR7GbGaUhC7lMofgxDCbNvU61jjSfpsgSe3kOJARdsKYw17FMhHdCS09R/dvUN4FcvK/THpv+3Bw0y/2ssC1FO0sp5NHyVa+a1FxQB95NvR7jLhs2/hTU29e3FPd+hMW63gqDeBYhZeeDfcy", zipMb: "187 MB" },
+  { nombre: "Doña Adriana y Don Nelson", s: "SMjxxO6tIu0EmePlamLnNQ==", i: "cZtdFlpCtlGTGZxj", d: "VqC67Cjv9f1cMTTsDr2wIaeNVFK2eYWQKmXRm1/94PSjSPjR57WJ65DsgNR1ADaANOIE6lehL1S1ecRuuytiX/7KNjFLQLHP9kboKmIAysgvzAf5QRKOk+H4av+0wjisCt7VCw==", zs: "C6NbV9Xp81xJEMbRZVtsZA==", zi: "yL2iAi43DaeSohb4", zd: "gzT1B8ccn2IbKEolJ/msV2EF64OWlGMNgTpaFfEOccNFDf/1MDBPlDALSY2HT4kRoilXykb4nwrxur5bia09ZTmA5AaaDg71Cn73cL82Qe8E5ws8qXpGKDuSF0rycLnba7LuRWG63tVvCI7DHHBJPDhPcbFLykVn8lXYVPVtH6qhymsu6wTK", zipMb: "304 MB" },
+  { nombre: "Carolina y Alejo", s: "5pak0br89Py7GqsLbd8KBQ==", i: "PAPsR9xtig2SqllV", d: "DNqzpUTvRjg/NEM5WzE1gzA5bFsNk8dEaJTcEH+U8VC3Fh8x4+UEjWPKjPmUE+elO+jemhmmT1TCcEArUaV683UXMLknmVgyy48DGRQCcQs9k52z0BrS8F5Kugb4jGctS9JRig==", zs: "zBBzAXJYfCMKcWQgYzm33g==", zi: "5datJGORZXwTlM3/", zd: "lnZSsr3okhyWBZd7vl0AZ+jVQOMtOGh4NhCUP3fRPJU8CIadEAt7JaZzJAnlAGQ8e0tIFU5V2SP1E6thBDSTSzw0OEIwWe6iyqMZA0quLo+IPXHUq0uTQP/EONtki4jfdO5CbdmN2umffanf9fxmYaljtw7KJ5yo6HpjWNhZz8WxfXzyNnrs", zipMb: "132 MB" },
+  { nombre: "Carla", s: "EwdjKwr2SQ62vRJ3zEXiqQ==", i: "cnHcEkfrU20KF8kA", d: "Z1OjU5WmDTOcXGbNknAo3DMAmw/aYDZp0aIcvYEbxOF+wNbpoVrIJzLnPbwzYIT3dOjQ3Pho9pU2q1YdPyk0xMd/01WZm1g7/QYV4YNCQcI35/hnY6IYGve4HUQyMDYcLGivEA==", zs: "GvLibL+Itscv/EpZ/SSgqA==", zi: "7B8/BLrMKgBFAaEQ", zd: "LcZ/k6+gIfFbBlKGxW3xd8+zLaNPkikEy00NVUTVR+baI8JnanHk6cdfO4WvOsV5qG7ZKNhoSIRfWdWkaJgMoF3QE+DvoMdRw8AWe5o8gKbgFmFR0bPe+uMZkfqlbU6E+5Zo+62hD8ZPr7K4qPjY9Mhpz7CV77xSeAy8PO81YaH7+rLj558U", zipMb: "85 MB" },
   { nombre: "Majo", s: "", i: "", d: "" }
 ];
 // ─────────────────────────────────────────────────────────────────────────────
@@ -116,6 +116,21 @@ function enlace(url){
   a.href = url; a.textContent = "Abrir carpeta";
   return a;
 }
+// Descarga directa del .zip ya subido a Drive: no arma nada en el navegador,
+// así funciona igual en iPhone y Android sin quedarse sin memoria.
+function zipBtn(url, mb){
+  var a = document.createElement("a");
+  a.className = "btn"; a.target = "_blank"; a.rel = "noopener";
+  a.href = url;
+  a.textContent = "Descargar todo (ZIP)" + (mb ? " · " + mb : "");
+  return a;
+}
+// Descifra el enlace del ZIP con la misma clave de la carpeta.
+async function zipDe(c, clave){
+  if (!c.zd) return null;
+  try { return await descifrar({s:c.zs, i:c.zi, d:c.zd}, clave); }
+  catch (e) { return null; }
+}
 var grid = document.getElementById("grid");
 CARPETAS.forEach(function(c){
   var f = document.createElement("div");
@@ -129,6 +144,7 @@ CARPETAS.forEach(function(c){
 
   if (c.url){
     row.appendChild(enlace(c.url));
+    if (c.zip) row.appendChild(zipBtn(c.zip, c.zipMb));
     card.appendChild(row);
   } else if (c.d){
     var inp = document.createElement("input");
@@ -142,6 +158,8 @@ CARPETAS.forEach(function(c){
       try {
         var url = await descifrar(c, inp.value);
         row.innerHTML = ""; row.appendChild(enlace(url));
+        var zu = await zipDe(c, inp.value);
+        if (zu) row.appendChild(zipBtn(zu, c.zipMb));
         m.textContent = "";
       } catch (e) {
         m.textContent = "Clave incorrecta. Inténtalo de nuevo.";
